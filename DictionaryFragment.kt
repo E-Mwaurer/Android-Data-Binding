@@ -14,7 +14,7 @@ class DictionaryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val root = inflater.inflate(R.layout.fragment_home,container,false)
+        val root = inflater.inflate(R.layout.dictionary-layout,container,false)
 
         return root
     }
