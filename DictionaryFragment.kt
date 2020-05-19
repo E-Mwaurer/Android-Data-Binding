@@ -14,10 +14,6 @@ class DictionaryFragment : Fragment() {
     private lateinit var submitBtn: Button
     private lateinit var outputText: TextView
     
-    private var dictionaryViewModel: DictionaryViewModel by lazy {
-        ViewModelProviders(this).get(DictionaryViewModel::class.java)
-    }
-    
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -27,10 +23,10 @@ class DictionaryFragment : Fragment() {
 
         // making ui framework calls to get hold of views on the layout
         
-        wordEditText = root.findViewById<EditText>(R.id.)
-        wordMeaningEditText = froot.indViewById<EditText>(R.id.)
-        submitBtn = root.findViewById<Button>(R.id.)
-        outputText = root.findViewById<TextView>(R.id.)
+        wordEditText = root.findViewById<EditText>(R.id.word_text)
+        wordMeaningEditText = froot.indViewById<EditText>(R.id.word_meaning)
+        submitBtn = root.findViewById<Button>(R.id.btnSubmit)
+        outputText = root.findViewById<TextView>(R.id.wordsWritten)
                 
         submitBtn.setOnClickListener{
             // populate the output textview with values that have been input from the editTexts
